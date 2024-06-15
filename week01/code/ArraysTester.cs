@@ -32,6 +32,13 @@ public static class ArraysTester {
     /// integer greater than 0.
     /// </summary>
     /// <returns>array of doubles that are the multiples of the supplied number</returns>
+
+    /// Plan 1
+    /// Desired Outcome: Generate an array of doubles starting from a given number and including its multiples up to a specified length.
+    ///  Return
+    ///  Loop to Populate Array
+    /// Initialization
+    /// Parameters What we need
     private static double[] MultiplesOf(double number, int length)
 {
     if (length <= 0)/// Check for valid input if Greater than O
@@ -55,6 +62,14 @@ public static class ArraysTester {
     ///
     /// Because a list is dynamic, this function will modify the existing data list, rather than returning a new list.
     /// </summary>
+
+    /// Plan 2 rotate 
+    /// Desired Outcome: Rotate a List<int> to the right by a specified number of positions.
+    /// Since the function modifies the list in place, it should return void.
+    /// Check if amount is 0 or equals data.Count to handle no rotation scenario.
+    /// Modifying using Insert and Remove offers a clear solutions 
+    /// Calculate the starting index from which to begin the rotation (rotationIndex = data.Count - amount).
+    /// Ensure the function correctly receives and uses the List<int> and amount parameters
     private static void RotateListRight(List<int> data, int amount)
 {
     if (amount == 0 || amount == data.Count)
